@@ -30,7 +30,7 @@ def lambda_handler(event, context):
         
         print("Executing query to get Node_group_name")
         # Execute a query to get Node_group_name
-        cursor.execute("SELECT Node_group_name FROM your_table_name;")
+        cursor.execute("SELECT Node_group_name FROM node_groups;")
         records = cursor.fetchall()
         
         print(f"Query executed. Number of records: {len(records)}")
