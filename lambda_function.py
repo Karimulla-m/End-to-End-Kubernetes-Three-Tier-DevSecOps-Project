@@ -22,7 +22,7 @@ def lambda_handler(event, context):
         cursor = connection.cursor()
         
         # Execute a query to get Node_group_name
-        cursor.execute("SELECT Node_group_name FROM your_table_name;")
+        cursor.execute("SELECT Node_group_name FROM node_groups;")
         records = cursor.fetchall()
         
         # Process the records
